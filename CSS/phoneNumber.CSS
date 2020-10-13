@@ -1,0 +1,80 @@
+body{
+background-image: linear-gradient(to right, #555555 , #7e8a97);
+}
+
+.bodyContainer{
+  border: 3px solid #dc3545;
+  border-radius: 8px;
+  padding:7% 20% 0 20%;
+  margin-top: 50px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+
+/* header */
+#header {
+  height: 280px;
+  width: 280px;
+  background-image: radial-gradient(circle,#7e8a97, #555555 );
+  border-radius: 50%;
+  display: inline-block;
+  font-family: 'Libre Baskerville', serif;
+}
+.abbreviation{
+  padding: 30% 0 1% 0;
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.abbreviation-meaning{
+  font-size:20px;
+  display:inline;
+  background-color:#dc3545;
+  color: white;
+  height: 40px;
+  width: 330px;
+  display: inline-block;
+  text-align: center;
+}
+
+.rectangle-shape{
+  padding:1% 30% 0 0;
+}
+
+/* Phone Number section */
+#phoneNumber{
+  padding: 8% 0 8% 20%;
+  text-align:left;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+section p{
+  font-size: 120%;
+}
+
+#hint{
+  color: #a6a6a4;
+}
+/* for the button */
+.submit-btn{
+  padding: 6% 0 1% 25%;
+}
+
+i{
+  animation:down-arrow 1.5s linear infinite;
+
+}
+
+@keyframes down-arrow {
+  0% {transform: translate(0);}
+  50% {transform: translate(0,5px);}
+}
+
+
+/* Footer */
+#footer{
+padding:1% 0;
+text-align: center;
+font-family: 'Libre Baskerville', serif;
+}
