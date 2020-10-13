@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title> Phone Number</title>
     <link href="CSS/phoneNumber.CSS" rel="stylesheet">
 </head>
-
 <body>
-    <!-- header -->
-    <header id="header">
-        <h1> STP </h1>
-        <!-- let the font smaller than the h1 -->
-        <h2>STEPS TOWARDS PROGRESS </h2>
-    </header>
-    <!-- main -->
-    <main id="main">
-        <section id="phoneNumber">
-            <p> Please enter your phone number </p>
-            <!-- make the hint with a small font -->
-            <p id="hint">HINT:- you must enter the phone number that you used on the previous form</p>
-            <label for="Phone"> Mobile Phone</label><input id="Phone" name="Phone" type="tel" required placeholder="01551471589"></input>
-            <button type="submit"> Submit </button>
-        </section>
-    </main>
-    <!-- footer -->
-    <footer id="footer">
-        <p> Best wishes </p>
-        <p> © Copyright STP </p>
-    </footer>
+  <!-- header -->
+  <header id="header">
+     <h1> STP </h1>
+     <!-- let the font smaller than the h1 -->
+     <h2>STEPS TOWARDS PROGRESS </h2>
+  </header>
+  <!-- main -->
+  <main id="main">
+    <section id="phoneNumber" >
+      <form action="./Checks/phoneCheck.php" method="POST">
+        <p> Please enter your phone number </p>
+        <!-- make the hint with a small font -->
+        <p id="hint">HINT:- you must enter the phone number that you used on the pervious form</p>
+        <label for="Phone" > Mobile Phone</label><input id="Phone"  name="phone" type="tel" required placeholder="01551471589"></input>
+        <button type="submit" name="submit" > Submit </button>
+     </form>
+    </section>
+  </main>
+  <!-- footer -->
+  <footer id="footer">
+    <p> Best wishes </p>
+    <p> © Copyright STP  </p>
+  </footer>
 </body>
 <script src="JS\phoneNumber.js"></script>
-
 </html>
