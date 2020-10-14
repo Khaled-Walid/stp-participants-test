@@ -7,17 +7,14 @@ background-image: linear-gradient(to right, #555555 , #7e8a97);
   border: 3px solid #dc3545;
   border-radius: 8px;
   padding: 0;
-  /* margin: 50px 30px 20px 200px; */
-  margin:5% 0 3% 20%;
+  margin:3% 0 1% 20%;
   text-align: center;
   background-color: #f9f6f7;
-
-  /* f6f6f6 */
   width:60%;
 }
 
 .fix{
-  padding:5% 3% 0 0;
+  padding:2% 3% 0 0;
 }
 
 
@@ -28,7 +25,7 @@ img{
 
 /* Phone Number section */
 #phoneNumber{
-  padding: 6% 0 6% 30%;
+  padding: 4% 0 6% 30%;
   text-align:left;
   font-family: 'Fjalla One', sans-serif;
 }
@@ -43,7 +40,7 @@ section p{
 }
 /* for the button */
 .submit-btn{
-  padding: 4% 0 1% 20%;
+  padding: 2% 0 1% 20%;
 }
 
 i{
