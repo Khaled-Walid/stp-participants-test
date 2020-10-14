@@ -3,7 +3,7 @@ const phoneNumber = document.getElementById("Phone");
 
 const pattern = /^01[0-25]\d{8}$/gs;
 
-hint.style.display = "none"
+// hint.style.display = "none"
 
 function validatePhoneNumber() {
   // hint.style.removeProperty("display")
