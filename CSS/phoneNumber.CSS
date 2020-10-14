@@ -1,6 +1,6 @@
 body{
 background-image: linear-gradient(to right, #555555 , #7e8a97);
-animation:slide-up 3s;
+
 }
 
 .bodyContainer{
@@ -56,10 +56,6 @@ i{
   50% {transform: translate(0,5px);}
 }
 
-@keyframes slide-up{
-  0% {transform: translateY(300px);}
-  100% {transform: translateY(0);}
-}
 /* Footer */
 #footer{
 padding:1% 0 ;
