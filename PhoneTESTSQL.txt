@@ -1,0 +1,13 @@
+CREATE TABLE participantS(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(30) NOT NULL,
+phone VARCHAR(30) NOT NULL,
+tested VARCHAR(30) NOT NULL DEFAULT "NO"   
+);
+
+
+INSERT INTO participants (name,phone) VALUES ('ahmed','01127010091');
+INSERT INTO participants (name,phone) VALUES ('mohamed','01223664001');
+INSERT INTO participants (name,phone,tested) VALUES ('yosssef','01008481531','YES');
+INSERT INTO participants (name,phone,tested) VALUES ('khalid','01001231234','NO');
+INSERT INTO participants (name,phone,tested) VALUES ('mazen','01234567890','YES');
