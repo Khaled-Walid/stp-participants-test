@@ -2,60 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title> Phone Number</title>
+  <meta charset="UTF-8">
+  <title> Phone Number</title>
 
-    <!-- Bootstrap + Js -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- Bootstrap + Js -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 
-    <link href="CSS/phoneNumber.CSS" rel="stylesheet">
-    <link rel="icon" href="img/stp_logo.ico">
+  <link href="CSS/phoneNumber.CSS" rel="stylesheet">
+  <link rel="icon" href="img/stp_logo.ico">
 
-    <!-- Font Awsome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <!-- Google Fonts  -->
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <!-- Font Awsome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <!-- Google Fonts  -->
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Baskerville&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div class="container bodyContainer ">
     <div class="fix">
-    <!-- header -->
-    <header id="header">
+      <!-- header -->
+      <header id="header">
 
-   <img  src="img/stp_logo.png" alt="stp_logo">
-   
-    </header>
-    <!-- main -->
-    <main id="main">
-        <section id="phoneNumber">
+        <img src="img/stp_logo.png" alt="stp_logo">
+
+      </header>
+      <!-- main -->
+      <main id="main">
+        <form action="">
+          <section id="phoneNumber">
             <p> Please enter your phone number </p>
             <!-- make the hint with a small font -->
             <p id="hint">HINT:- you must enter the phone number that you used on the previous form</p>
 
             <div class="input-group mb-3 pt-3" style="width:60%">
-             <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">Mobile Number</span>
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Mobile Number</span>
+              </div>
+              <input id="Phone" class="form-control" name="Phone" type="tel" required placeholder="01XXXXXXXXX"
+                pattern="^01[0-25]\d{8}$" title="Invalid Phone Number" required></input>
             </div>
-          <input id="Phone"class="form-control  " name="Phone" type="tel" required placeholder="01551471589"></input>
-          </div>
 
             <div class="submit-btn">
-              <button  class="btn btn-lg btn-danger "type="submit"> Submit
-                 <i class="fa fa-angle-down" aria-hidden="true"></i>
-               </button>
+              <button class="btn btn-lg btn-danger " type="submit"> Submit
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </button>
             </div>
 
-        </section>
-    </main>
-  </div>
-  <!-- footer -->
-  <footer id="footer" class="bg-danger container-fluid">
+          </section>
+        </form>
+      </main>
+    </div>
+    <!-- footer -->
+    <footer id="footer" class="bg-danger container-fluid">
       <p> © Copyright STP </p>
-  </footer>
+    </footer>
   </div>
 </body>
 
