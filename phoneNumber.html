@@ -22,15 +22,12 @@
 
 <body>
   <div class="container bodyContainer ">
+    <div class="fix">
     <!-- header -->
     <header id="header">
 
-        <h1 class="abbreviation" > STP </h1>
-        <div class="rectangle-shape">
-        <!-- let the font smaller than the h1 -->
-        <h2 class="abbreviation-meaning">STEPS TOWARDS PROGRESS </h2>
-        </div>
-
+   <img  src="img/stp_logo.png" alt="stp_logo">
+   
     </header>
     <!-- main -->
     <main id="main">
@@ -39,11 +36,11 @@
             <!-- make the hint with a small font -->
             <p id="hint">HINT:- you must enter the phone number that you used on the previous form</p>
 
-            <div class="input-group mb-3 pt-3">
+            <div class="input-group mb-3 pt-3" style="width:60%">
              <div class="input-group-prepend">
             <span class="input-group-text" id="basic-addon1">Mobile Number</span>
             </div>
-          <input id="Phone"class="form-control " name="Phone" type="tel" required placeholder="01551471589"></input>
+          <input id="Phone"class="form-control  " name="Phone" type="tel" required placeholder="01551471589"></input>
           </div>
 
             <div class="submit-btn">
@@ -54,13 +51,14 @@
 
         </section>
     </main>
-
-    <!-- footer -->
-    <footer id="footer" class="bg-danger container-fluid">
-        <p> © Copyright STP </p>
-    </footer>
-</div>
+  </div>
+  <!-- footer -->
+  <footer id="footer" class="bg-danger container-fluid">
+      <p> © Copyright STP </p>
+  </footer>
+  </div>
 </body>
+
 <script src="JS\phoneNumber.js"></script>
 
 </html>
