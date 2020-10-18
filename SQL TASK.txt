@@ -1,0 +1,92 @@
+CREATE TABLE Participants(
+    id INTEGER NOT NULL UNIQUE AUTO_INCREMENT,
+    name VARCHAR(50), 
+    phone VARCHAR(11) PRIMARY KEY, 
+    email VARCHAR(50), 
+    address VARCHAR(50), 
+    pref1 VARCHAR(50), 
+    pref2 VARCHAR(50), 
+    university VARCHAR(50), 
+    faculty VARCHAR(50), 
+    department VARCHAR(50), 
+    gradYear int(4), 
+    reason VARCHAR(800), 
+    q1 VARCHAR(800), 
+    q2 VARCHAR(800),
+    tested VARCHAR(10) DEFAULT 'NO'
+)
+
+
+INSERT INTO participants (name,phone,email,address,pref1,pref2,university,faculty,department,gradYear,reason,q1,q2) VALUES('mohamed','01223664001','mohamed@gmail.com','a12','Machine learning','PR','AINSAMS','eng','EECE',2024,'GOODBYE','ques1','ques2');
+
+INSERT INTO participants (name,phone,email,address,pref1,pref2,university,faculty,department,gradYear,reason,q1,q2) VALUES('mazen','01112312345','mazen@gmail.com','a23','Machine learning','Internet of things IOT','cairo','eng','com',2023,'hellooo','ques1','ques2');
+
+INSERT INTO participants (name,phone,email,address,pref1,pref2,university,faculty,department,gradYear,reason,q1,q2) VALUES('osama','01008481531','osama@gmail.com','asa12','Internet of things IOT','HR','cairo','eng','com',2025,'hellooo','ques1','ques2');
+
+INSERT INTO participants (name,phone,email,address,pref1,pref2,university,faculty,department,gradYear,reason,q1,q2) VALUES('khalid','01234578901','khalid@gmail.com','asasa12','Mobile development using flutter','HR','cairo','eng','com',2023,'hellooSDAo','ques1','ques2');
+
+INSERT INTO participants (name,phone,email,address,pref1,pref2,university,faculty,department,gradYear,reason,q1,q2) VALUES('ahmed','011127010091','ahmed@gmail.com','a12','Internet of things IOT','HR','cairo','eng','com',2023,'helloo','ques1','ques2');
+
+INSERT INTO participants (name,phone,email,address,pref1,pref2,university,faculty,department,gradYear,reason,q1,q2) VALUES('mazen ahmed','01111111111','mazen@gmail.com','a23','PR','Internet of things IOT','cairo','eng','com',2025,'hellooo','ques1saas','ques2asas');
+
+INSERT INTO participants (name,phone,email,address,pref1,pref2,university,faculty,department,gradYear,reason,q1,q2) VALUES('mohamed','01223664002','mohamed@gmail.com','a12','HR','PR','AINSAMS','eng','ARCH',2021,'GOODBYE','ques1','ques2');
+
+
+///////////////////////////////////////////////////////////////////////////////
+CREATE TABLE nonTechAnswers(
+    id INT NOT NULL UNIQUE AUTO_INCREMENT,
+    phone varchar(11) NOT NULL,
+    Question1 VARCHAR(255) NOT NULL,
+    Question2 VARCHAR(255) NOT NULL,
+    Question3 VARCHAR(255) NOT NULL,
+    Question4 VARCHAR(255) NOT NULL,
+    Question5 VARCHAR(255) NOT NULL,
+    Question6 VARCHAR(255) NOT NULL,
+    Question7 VARCHAR(255) NOT NULL,
+    Question8 VARCHAR(255) NOT NULL,
+    Question9 VARCHAR(255) NOT NULL,
+    Question10 VARCHAR(255) NOT NULL,
+    Question11 VARCHAR(255) NOT NULL,
+    Question12 VARCHAR(255) NOT NULL,
+    Question13 VARCHAR(255) NOT NULL,
+    Question14 VARCHAR(255) NOT NULL,
+    FOREIGN KEY(phone) REFERENCES participants(phone)
+    
+);
+
+
+
+
+CREATE TABLE  ml_answers(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+phone VARCHAR(11) NOT NULL,
+Question1 VARCHAR(1000) NOT NULL,
+Question2 VARCHAR(1000) NOT NULL,
+Question3 VARCHAR(1000) NOT NULL,
+Question4 VARCHAR(1000) NOT NULL,
+Question5 VARCHAR(1000) NOT NULL,
+FOREIGN KEY(phone) REFERENCES participants(phone)    
+); 
+
+
+
+
+
+CREATE TABLE  iot_answers(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+phone VARCHAR(11) NOT NULL,
+Question1 VARCHAR(1000) NOT NULL,
+Question2 VARCHAR(1000) NOT NULL,
+FOREIGN KEY(phone) REFERENCES participants(phone)    
+);
+
+
+
+
+CREATE TABLE  flutter_answers(
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+phone VARCHAR(11) NOT NULL,
+Question1 VARCHAR(1000) NOT NULL,
+Question2 VARCHAR(1000) NOT NULL,
+FOREIGN KEY(phone) REFERENCES participants(phone)    
+);
