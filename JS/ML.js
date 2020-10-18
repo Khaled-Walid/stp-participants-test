@@ -148,5 +148,3 @@ allQuestions.forEach((element) => {
     element.click();
   });
 });
-
-window.onload = updateProgressBar;
