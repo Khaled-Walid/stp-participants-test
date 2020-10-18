@@ -149,3 +149,4 @@ allQuestions.forEach((element) => {
   });
 });
 
+window.onload = updateProgressBar;
