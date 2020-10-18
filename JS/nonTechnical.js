@@ -118,21 +118,20 @@ function validateForm(questionsNumber) {
 // counting questions based on the user's preference
 let totalQuestions;
 
-  if (
-    pref1 === "Mobile development using flutter " ||
-    pref1 === "Internet of things IOT "
-  ) {
-    totalQuestions = 16;
-  } else if (pref1 === "Machine learning ") {
-    totalQuestions = 19;
-  } else {
-    totalQuestions = 14;
-  }
-  
-  if (totalQuestions === 14) {
-    showSection(wishes);
-  }
+if (
+  pref1 === "Mobile development using flutter " ||
+  pref1 === "Internet of things IOT "
+) {
+  totalQuestions = 16;
+} else if (pref1 === "Machine learning ") {
+  totalQuestions = 19;
+} else {
+  totalQuestions = 14;
+}
 
+if (totalQuestions === 14) {
+  showSection(wishes);
+}
 
 // function updates the progress for every answer change
 function updateProgressBar() {
@@ -150,11 +149,12 @@ allQuestions.forEach((element) => {
 
 // To add a class when the radio button is checked
 // and remove the class for all other answers
-$("input").on("change", function () {
+function highlight() {
   const Question = $(this).attr("name");
   $(`input[name = "${Question}"]`).closest("div").removeClass("checked");
   $(this).closest("div").addClass("checked");
-});
+}
+$("input").on("change", highlight);
 
 // adds event listener to all answer containers
 allQuestions.forEach((element) => {
@@ -162,3 +162,17 @@ allQuestions.forEach((element) => {
     element.click();
   });
 });
+
+window.onload = function () {
+  updateProgressBar();
+  const allRadioQuestions = document.querySelectorAll(
+    'input[name*="question"]'
+  );
+  allRadioQuestions.forEach((element) => {
+    if (element.checked) {
+      element.parentNode.parentNode.classList.add("checked");
+    } else {
+      element.parentNode.parentNode.classList.remove("checked");
+    }
+  });
+};
