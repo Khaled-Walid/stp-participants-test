@@ -14,7 +14,7 @@ CREATE TABLE Participants(
     q1 VARCHAR(800), 
     q2 VARCHAR(800),
     tested VARCHAR(10) DEFAULT 'NO'
-)
+);
 
 
 INSERT INTO participants (name,phone,email,address,pref1,pref2,university,faculty,department,gradYear,reason,q1,q2) VALUES('mohamed','01223664001','mohamed@gmail.com','a12','Machine learning','PR','AINSAMS','eng','EECE',2024,'GOODBYE','ques1','ques2');
@@ -32,7 +32,7 @@ INSERT INTO participants (name,phone,email,address,pref1,pref2,university,facult
 INSERT INTO participants (name,phone,email,address,pref1,pref2,university,faculty,department,gradYear,reason,q1,q2) VALUES('mohamed','01223664002','mohamed@gmail.com','a12','HR','PR','AINSAMS','eng','ARCH',2021,'GOODBYE','ques1','ques2');
 
 
-///////////////////////////////////////////////////////////////////////////////
+
 CREATE TABLE nonTechAnswers(
     id INT NOT NULL UNIQUE AUTO_INCREMENT,
     phone varchar(11) NOT NULL,

@@ -68,11 +68,11 @@
                 <textarea id="question2" class="form-control" rows="5" cols="100" maxlength="300"
                   placeholder="Enter your code hear" name="ML2"></textarea>
               </li>
-              <br><br>
             </ol>
 
             <button id="next1" type="button" class="btn btn-lg btn-danger leftBtn"> Next <i
-              class="fas fa-arrow-right"></i></button>          
+              class="fas fa-arrow-right"></i></button>
+            <br><br>
               </section>
           <section id="sectionTwo">
             <ol id="questions" start="3">
@@ -108,13 +108,14 @@
                   </div>
 
                 </ul>
-            </ol><br><br>
+            </ol>
             </li>
             <br><br>
             <button id="prev1" type="button" class="btn btn-lg btn-danger rightBtn"><i
               class="fas fa-arrow-left"></i> Previous </button>
             <button id="next2" type="button" class="btn btn-lg btn-danger leftBtn"> Next <i
               class="fas fa-arrow-right"></i></button>
+            <br><br>
           </section>
           <section id="sectionThree">
 
@@ -125,13 +126,11 @@
                 <textarea id="question5" class="form-control" rows="5" cols="100" maxlength="300"
                   placeholder="Enter your code here"  name="ML5"></textarea>
               </li>
-
-              <br><br>
-
             </ol>
             <button id="prev2" type="button" class="btn btn-lg btn-danger rightBtn"><i
               class="fas fa-arrow-left"></i> Previous </button>
             <button type="submit" class="btn btn-lg btn-danger leftBtn" name="submitML"> Submit </button>
+            <br><br>
             <div>
                             <p id="wishes">
                                 Best wishes <br> STP Team

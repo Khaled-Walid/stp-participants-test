@@ -5,7 +5,7 @@
     if ($_SESSION['tested']=='YES'){
         echo "<script> alert('Oops!, you already TOOK the test!');  window.location.href='https://stp-org.com'; </script>";
     }
-  
+
     setcookie('techpref',$_SESSION['pref1'],time()+3600,"/");
 ?>
 <!DOCTYPE html>
@@ -146,12 +146,13 @@
                                 </div>
 
                             </ul>
-                            <br><br>
+
 
                             <div class="btnContainer">
                                 <button id="next1" type="button" class="btn btn-lg btn-danger firstBtn" h> Next <i
                     class="fas fa-arrow-right"></i></button>
                             </div>
+                            <br><br>
                     </section>
                     <section id="sectionTwo">
                         <ol start="4">
@@ -258,7 +259,6 @@
                                         <label for="sevenD"> How does it affect everyone involved?</label></li>
                                 </div>
 
-                                <br><br>
                             </ul>
                             <div class="btnContainer">
                                 <button id="prev1" type="button" class="btn btn-lg btn-danger rightBtn"> <i
@@ -266,7 +266,7 @@
                                 <button id="next2" type="button" class="btn btn-lg btn-danger leftBtn"> Next <i
                     class="fas fa-arrow-right"></i></button>
                             </div>
-
+                            <br><br>
 
                     </section>
                     <section id="sectionThree">
@@ -367,13 +367,14 @@
                                         <label for="elevenD"> You do excellent work.</label></li>
                                 </div>
 
-                            </ul><br><br>
+                            </ul>
                             <div class="btnContainer">
                                 <button id="prev2" type="button" class="btn btn-lg btn-danger rightBtn"> <i
                     class="fas fa-arrow-left"></i>Previous </button>
                                 <button id="next3" type="button" class="btn btn-lg btn-danger leftBtn"> Next <i
                         class="fas fa-arrow-right"></i></button>
                             </div>
+                            <br><br>
 
 
                     </section>
@@ -455,13 +456,14 @@
                                         <label for="fourteenD"> Think of the best way to make it.</label></li>
                                 </div>
                             </ul>
-                            <br><br>
                             <div class="btnContainer">
                                 <button id="prev3" type="button" class="btn btn-lg btn-danger rightBtn "> <i
                     class="fas fa-arrow-left"></i>Previous </button>
                                 <button id="submit" type="submit" name="submit1" class="btn btn-lg btn-danger leftBtn"> Submit </button>
 
                             </div>
+                            <br><br>
+                            <br><br>
                             <div>
                                 <p id="wishes">
                                     Best wishes <br> STP Team

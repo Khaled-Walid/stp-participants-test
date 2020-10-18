@@ -1,8 +1,8 @@
 body{
   background-image: linear-gradient(to right, #555555 , #7e8a97);
-  
+
   }
-  
+
   .bodyContainer{
     border: 3px solid #dc3545;
     border-radius: 8px;
@@ -12,42 +12,42 @@ body{
     background-color: #f9f6f7;
     width:60%;
   }
-  
+
   .fix{
     padding:2% 3% 0 0;
   }
-  
-  
+
+
   img{
     width:30%;
   }
-  
-  
+
+
   /* Phone Number section */
   #phoneNumber{
     padding: 4% 0 6% 30%;
     text-align:left;
     font-family: 'Fjalla One', sans-serif;
   }
-  
+
   section p{
     font-size: 120%;
   }
-  
+
   #hint{
     width:60%;
   }
   /* for the button */
   .submit-btn{
     padding: 2% 0 1% 15%;
-  
+    margin-left: 5%;
+
   }
-  
-  
+
+
   #footer {
       padding: 1% 0;
       text-align: center;
       font-family: 'Libre Baskerville', serif;
       color: white;
   }
-  

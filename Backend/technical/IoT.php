@@ -50,7 +50,7 @@
         </header>
         <!-- main contains the sections  -->
         <main>
-            
+
             <form action="../../Checks/techCheck.php" method="POST" name="myForm" onsubmit="return validateForm(2)" >
             <div class="QAContainer">
           <div class="progress">
@@ -77,9 +77,10 @@
                 <textarea id="question2" class="form-control" rows="10" cols="100" maxlength="500"
                   placeholder="Enter your code hear" name="iot2"></textarea>
               </li>
-              <br><br>
             </ol>
             <button type="submit" class="btn btn-lg btn-danger leftBtn" name="submitIot"> Submit </button>
+            <br><br>
+            <br><br>
             <div>
                             <p id="wishes">
                                 Best wishes <br> STP Team
