@@ -163,7 +163,8 @@ allQuestions.forEach((element) => {
   });
 });
 
-window.onload = function () {
+
+window.onload=function () {
   updateProgressBar();
   const allRadioQuestions = document.querySelectorAll(
     'input[name*="question"]'

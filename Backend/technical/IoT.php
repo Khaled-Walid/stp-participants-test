@@ -43,10 +43,7 @@
     <div class=" bodyContainer">
         <!-- header  -->
         <header id="header">
-            <h1> STP </h1>
-            <!-- let the font smaller than the h1 -->
-            <h3>STEPS TOWARDS PROGRESS </h3>
-            <h2> Internt of things IoT Test </h2>
+          <h2>Technical Test</h2>
         </header>
         <!-- main contains the sections  -->
         <main>

@@ -42,7 +42,7 @@
     <div class=" bodyContainer">
         <header id="header">
 
-            <h2>Participants test </h2>
+          <h2>Technical Test</h2>
         </header>
         <!-- main contains the sections  -->
         <main>

@@ -41,7 +41,7 @@
   <div class=" bodyContainer">
     <!-- header  -->
     <header id="header">
-      <h2>Machine Learning Test</h2>
+      <h2>Technical Test</h2>
     </header>
     <!-- main contains the sections  -->
     <main>
