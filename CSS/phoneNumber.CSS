@@ -56,7 +56,7 @@ section p {
 @media (max-width: 800px) {
   p {
     font-size: 80%;
-    padding: 5% 10%;
+    padding: 5% 10% ;
   }
   button {
     margin-bottom: 10px;
@@ -70,6 +70,7 @@ section p {
     font-size: 60%;
     color: rgba(129, 129, 129, 0.582);
     margin-bottom: 0%;
+    padding-top: 0;
   }
   .input-group {
     width: 90%;
@@ -83,5 +84,11 @@ section p {
     box-sizing: border-box;
     width: 100%;
     white-space: break-spaces;
+  }
+  body{
+    margin-top: 15%;
+    margin-left: -20%;
+    margin-right: -20%;
+    margin-bottom: -30%;
   }
 }

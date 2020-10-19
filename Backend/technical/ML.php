@@ -16,10 +16,6 @@
     <title> Machine learning </title>
     <!-- Bootstrap + Js -->
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="../../MDB/css/bootstrap.min.css">
-    <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="../../MDB/css/mdb.min.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -32,6 +28,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital@1&family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Chela One' rel='stylesheet'>
+
     <!-- Font Awsome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
@@ -134,6 +132,11 @@
             <button type="submit" class="btn btn-lg btn-danger leftBtn" name="submitML"> Submit </button>
             <br><br>
             <div>
+              <p style="font-family: 'Chela One';font-size: 22px;" class ="Quote">
+            “Exams are the testing times. Put your heart and soul into the preparations so that you can deliver your performance with confidence and enjoy great results. No pains, no gains.”</p>
+              </div>
+
+            <div>
                             <p id="wishes">
                                 Best wishes <br> STP Team
                             </p>
@@ -150,14 +153,7 @@
 
   </div>
 </body>
-<!-- jQuery -->
-<script type="text/javascript" src="../../MDB/js/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="../../MDB/js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="../../MDB/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="../../MDB/js/mdb.min.js"></script>
+
 
 <script src="../../JS/ML.js"></script>
 
