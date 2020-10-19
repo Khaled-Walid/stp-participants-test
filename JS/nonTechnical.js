@@ -171,7 +171,7 @@ allQuestions.forEach((element) => {
 });
 
 
-window.onload=function () {
+function onLoad () {
   updateProgressBar();
   const allRadioQuestions = document.querySelectorAll(
     'input[name*="question"]'
@@ -184,3 +184,5 @@ window.onload=function () {
     }
   });
 };
+
+window.addEventListener("load", onLoad)
