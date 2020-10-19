@@ -53,11 +53,14 @@ body{
       color: white;
   }
 
-@media screen and (max-width:400px) {
+@media  (max-width:800px) {
   p{
     font-size: 80%;
   }
   img{
-    width:40%;
+    width:50%;
+  }
+  .bodyContainer{
+    margin:20% 0 0 20%;
   }
 }
