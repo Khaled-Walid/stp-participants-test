@@ -11,6 +11,8 @@
 
 <head>
 <meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
     <title> Flutter Test </title>
      <!-- Bootstrap core CSS -->
      <link rel="stylesheet" href="../../MDB/css/bootstrap.min.css">

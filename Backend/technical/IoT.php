@@ -12,6 +12,8 @@
 
 <head>
 <meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
   <title> Internt of things IoT Test </title>
 
     <!-- Bootstrap core CSS -->
@@ -26,8 +28,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 
-    <link href="../../CSS/technical.CSS" rel="stylesheet">
-    <link rel="icon" href="../../img/stp_logo.ico">
+<link rel="stylesheet" href="../../CSS/technical.CSS" >
+<link rel="icon" href="../../img/stp_logo.ico">
 
 <!-- Google Fonts  -->
 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Libre+Baskerville&display=swap" rel="stylesheet">

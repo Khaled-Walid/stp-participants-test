@@ -11,6 +11,8 @@
 
 <head>
 <meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
     <title> Machine learning </title>
     <!-- Bootstrap + Js -->
 
@@ -70,7 +72,7 @@
               </li>
             </ol>
 
-            <button id="next1" type="button" class="btn btn-lg btn-danger leftBtn"> Next <i
+            <button id="next1" type="button" class="btn btn-lg btn-danger firstBtn"> Next <i
               class="fas fa-arrow-right"></i></button>
             <br><br>
               </section>

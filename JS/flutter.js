@@ -45,10 +45,17 @@ restQuestions.forEach((element) => {
 });
 
 // function adds slide animation
-function animation (direction) {
-  const bodyContainer = document.querySelector(".bodyContainer");
-  bodyContainer.classList.add("animated", `slideIn${direction}`);
+function animation(direction) {
+  let x;
+  let y;
+  if (direction === "Right") {x = "slide-in"; y="slider"}
+  else if(direction === "Left") {x = `slide-out`; y="slider2"}
+  const bodyContainer = document.querySelector(".bodyContainer")
+  bodyContainer.removeAttribute("class")
   setTimeout(function () {
-    bodyContainer.classList.remove("animated", `slideIn${direction}`);
-  }, 1000);
+    bodyContainer.classList.add("bodyContainer", `${y}`, `${x}`);
+  }, 10);
+  setTimeout(function(){
+    bodyContainer.classList.add("width-fix");
+  },10)
 }

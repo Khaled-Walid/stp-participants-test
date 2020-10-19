@@ -13,6 +13,7 @@
 
 <head>
 <meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
     <title> Non-Technical Test </title>
  <!-- Bootstrap core CSS -->
  <link rel="stylesheet" href="../MDB/css/bootstrap.min.css">
@@ -39,7 +40,7 @@
 </head>
 
 <body>
-  <div class="bodyContainer">
+  <div id="slider" class="bodyContainer animated slide-in">
     <!-- header -->
     <header id="header">
 
@@ -369,10 +370,9 @@
 
                             </ul>
                             <div class="btnContainer">
-                                <button id="prev2" type="button" class="btn btn-lg btn-danger rightBtn"> <i
-                    class="fas fa-arrow-left"></i>Previous </button>
-                                <button id="next3" type="button" class="btn btn-lg btn-danger leftBtn"> Next <i
-                        class="fas fa-arrow-right"></i></button>
+                                <button id="prev2" type="button" class="btn btn-lg btn-danger rightBtn">
+                                    <i class="fas fa-arrow-left"></i>Previous </button>
+                                    <button id="next3" type="button" class="btn btn-lg btn-danger leftBtn"> Next <i class="fas fa-arrow-right"></i></button>
                             </div>
                             <br><br>
 
