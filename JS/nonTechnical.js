@@ -61,16 +61,21 @@ function buttonWorking(
 function animation(direction) {
   let x;
   let y;
-  if (direction === "Right") {x = "slide-in"; y="slider"}
-  else if(direction === "Left") {x = `slide-out`; y="slider2"}
-  const bodyContainer = document.querySelector(".bodyContainer")
-  bodyContainer.removeAttribute("class")
+  if (direction === "Right") {
+    x = "slide-in";
+    y = "slider";
+  } else if (direction === "Left") {
+    x = `slide-out`;
+    y = "slider2";
+  }
+  const bodyContainer = document.querySelector(".bodyContainer");
+  bodyContainer.removeAttribute("class");
   setTimeout(function () {
     bodyContainer.classList.add("bodyContainer", `${y}`, `${x}`);
   }, 10);
-  setTimeout(function(){
+  setTimeout(function () {
     bodyContainer.classList.add("width-fix");
-  },10)
+  }, 10);
 }
 
 // function adds eventlisteners to buttons
@@ -170,8 +175,7 @@ allQuestions.forEach((element) => {
   });
 });
 
-
-function onLoad () {
+function onLoad() {
   updateProgressBar();
   const allRadioQuestions = document.querySelectorAll(
     'input[name*="question"]'
@@ -183,6 +187,6 @@ function onLoad () {
       element.parentNode.parentNode.classList.remove("checked");
     }
   });
-};
+}
 
-window.addEventListener("load", onLoad)
+window.addEventListener("load", () => setTimeout(onLoad, 20));
